@@ -2,7 +2,7 @@
 
 **Daniel Hernandez-Juarez, Sarah Parisot, Benjamin Busam, Ales Leonardis, Gregory Slabaugh and Steven McDonagh**
 
-*CVPR, 2020*
+**CVPR, 2020**
 
 [paper](https://arxiv.org/abs/2002.12896 "A Multi-Hypothesis Approach to Color Constancy paper") / [poster](https://github.com/smcdonagh/multi_hyp_cc/blob/master/06066-poster.pdf "A Multi-Hypothesis Approach to Color Constancy poster") / [code](https://github.com/huawei-noah/multi_hyp_cc "A Multi-Hypothesis Approach to Color Constancy code") / [supplement](https://arxiv.org/abs/2002.12896) / [video](https://youtu.be/3NjLnmFyXwI) / [blog post](https://blog.huawei.com/tag/noahs-ark-labs/)
 
