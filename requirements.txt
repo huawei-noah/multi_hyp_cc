@@ -1,6 +1,6 @@
 opencv-python
 sklearn
 torchvision==0.5.0
-tensorflow==1.15
+tensorflow==1.15.2
 matplotlib
 seaborn
