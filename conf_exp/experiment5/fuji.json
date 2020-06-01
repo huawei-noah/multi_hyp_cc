@@ -1,0 +1,49 @@
+{
+  "name": "ffcc_lbfgs_thumb_olympus",
+  "network": {
+    "arch": "Ffcc",
+    "subarch": "ffcc",
+    "params": {
+      "bivariate_von_mises_epsilon": 0,
+      "mult_F": -24.75, "add_F": -38,
+      "mult_B": -20.75, "add_B": -49.25,
+      "mult_F_lab": -26.25, "add_F_lab": -38,
+      "local_absolute_deviation": true
+    }
+  },
+  "loss": {
+    "name": "Ffcc",
+    "params": {"logistic_loss_epochs": 16, "logistic_loss_mult": -14.25,
+              "bvm_mult": -0.75}
+  },
+  "reset_optimizer_epoch": 16,
+  "optimizer": {
+    "name": "LBFGS",
+    "params": {
+      "lr": 1,
+      "max_iter": 8,
+      "max_eval": 8,
+      "history_size": 80,
+      "tolerance_grad": 0,
+      "tolerance_change": 0
+    }
+  },
+  "required_input": ["log_uv_histogram_wrapped", "log_uv_histogram_wrapped_local_abs_dev", "illuminant", "illuminant_log_uv", "gt_pdf", "rgb"],
+  "pretrained": false,
+  "epochs": 50,
+  "choose_best_epoch_by": "mean_loss",
+  "batch_size": -1,
+  "learning_rate_scheduler": null,
+  "transforms": [
+    {"BlacklevelAndSaturation": {"saturation_scale": 0.95}},
+    {"Resize": {"size": [32, 48]}},
+    {"LogUvHistogramWrap": {"starting_uv": -0.375}},
+    {"Normalize": null}
+  ],
+  "transforms_valtest": null,
+  "cache_transforms": true,
+  "print_frequency_epoch": 1,
+  "tensorboard_frequency": 1,
+  "tensorboard_frequency_im": 1
+
+}

@@ -1,0 +1,49 @@
+{
+  "name": "kmeans_finalaffine_notrain_k5",
+  "network": {
+    "arch": "VggClassification",
+    "subarch": "vgg11",
+    "params": {"dropout": 0.5, "fix_base_network": true,
+              "final_affine_transformation": false}
+  },
+  "candidate_selection": {
+    "name": "KMeans",
+    "params": {"k": 5}
+  },
+  "cameras": ["CanonEOS550D"],
+  "pretrained_skip": ["clusters_CanonEos1DMark3", "clusters_CanonEos600D", "clusters_FujifilmXM1", "clusters_NikonD5200", "clusters_OlympusEPL6", "clusters_PanasonicGX1", "clusters_SamsungNX2000", "clusters_SonyA57", "fc_conf.0.weight", "fc_conf.0.bias", "fc_conf.2.weight", "fc_conf.2.bias", "fc_conf.4.weight"],
+  "loss": {
+    "name": "AngularError",
+    "params": {
+      "compute_acos": true
+    }
+  },
+  "optimizer": {
+    "name": "Adam",
+    "params": {
+      "lr": 5e-3,
+      "weight_decay": 0
+    }
+  },
+  "pretrained": true,
+  "epochs": 0,
+  "batch_size": 32,
+  "learning_rate_scheduler": {
+    "name": "MultiStepLR",
+    "params": {
+      "milestones": [10,50,80],
+      "gamma": 0.5
+    }
+  },
+  "transforms": [
+    {"BlacklevelAndSaturation": {"saturation_scale": 0.95}},
+    {"Resize": {"size": [64, 64]}},
+    {"Normalize": null}
+  ],
+  "transforms_valtest": null,
+  "cache_transforms": false,
+  "print_frequency_epoch": 1,
+  "tensorboard_frequency": 1,
+  "tensorboard_frequency_im": -1
+
+}

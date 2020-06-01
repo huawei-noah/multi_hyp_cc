@@ -1,0 +1,46 @@
+{
+  "name": "kmeans_finalaffine_noconf",
+  "network": {
+    "arch": "VggClassification",
+    "subarch": "vgg11",
+    "params": {"dropout": 0.5, "fix_base_network": true,
+              "final_affine_transformation": true}
+  },
+  "candidate_selection": {
+    "name": "KMeans",
+    "params": {"k": 120}
+  },
+  "cameras": ["ShiGehler"],
+  "loss": {
+    "name": "AngularError",
+    "params": {"compute_acos": true}
+  },
+  "optimizer": {
+    "name": "Adam",
+    "params": {
+      "lr": 5e-3,
+      "weight_decay": 0
+    }
+  },
+  "pretrained": true,
+  "epochs": 120,
+  "batch_size": 32,
+  "learning_rate_scheduler": {
+    "name": "MultiStepLR",
+    "params": {
+      "milestones": [10,50,80],
+      "gamma": 0.5
+    }
+  },
+  "transforms": [
+    {"BlacklevelAndSaturation": {"saturation_scale": 0.95}},
+    {"Resize": {"size": [64, 64]}},
+    {"Normalize": null}
+  ],
+  "transforms_valtest": null,
+  "cache_transforms": true,
+  "print_frequency_epoch": 1,
+  "tensorboard_frequency": 1,
+  "tensorboard_frequency_im": -1
+
+}
