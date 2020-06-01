@@ -1,0 +1,4 @@
+Nus
+data/nus/splits/fuji/fold1.txt
+data/nus/splits/fuji/fold2.txt
+data/nus/splits/fuji/fold3.txt

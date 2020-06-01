@@ -1,0 +1,4 @@
+Nus
+data/nus/splits/nikonD5200/fold1.txt
+data/nus/splits/nikonD5200/fold2.txt
+data/nus/splits/nikonD5200/fold3.txt

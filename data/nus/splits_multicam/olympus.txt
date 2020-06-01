@@ -1,0 +1,4 @@
+Nus
+data/nus/splits_multicam/olympus/fold1.txt
+data/nus/splits_multicam/olympus/fold2.txt
+data/nus/splits_multicam/olympus/fold3.txt

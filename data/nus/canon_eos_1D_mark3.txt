@@ -1,0 +1,4 @@
+Nus
+data/nus/splits/canon_eos_1D_mark3/fold1.txt
+data/nus/splits/canon_eos_1D_mark3/fold2.txt
+data/nus/splits/canon_eos_1D_mark3/fold3.txt

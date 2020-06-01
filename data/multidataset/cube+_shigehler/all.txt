@@ -1,0 +1,4 @@
+ShiGehler all data/shi_gehler/splits/fold1.txt
+ShiGehler all data/shi_gehler/splits/fold2.txt
+ShiGehler all data/shi_gehler/splits/fold3.txt
+Cube plus data/cube/plus.txt

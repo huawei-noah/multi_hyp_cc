@@ -1,0 +1,4 @@
+Nus
+data/nus/splits/nikonD40/fold1.txt
+data/nus/splits/nikonD40/fold2.txt
+data/nus/splits/nikonD40/fold3.txt

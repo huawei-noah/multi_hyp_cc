@@ -1,0 +1,8 @@
+Nus canon_eos_1D_mark3 data/nus/splits_multicam/canon_eos_1D_mark3/fold2.txt
+Nus canon_eos_600D data/nus/splits_multicam/canon_eos_600D/fold2.txt
+Nus fuji data/nus/splits_multicam/fuji/fold2.txt
+Nus nikonD5200 data/nus/splits_multicam/nikonD5200/fold2.txt
+Nus olympus data/nus/splits_multicam/olympus/fold2.txt
+Nus panasonic data/nus/splits_multicam/panasonic/fold2.txt
+Nus samsung data/nus/splits_multicam/samsung/fold2.txt
+Nus sony data/nus/splits_multicam/sony/fold2.txt

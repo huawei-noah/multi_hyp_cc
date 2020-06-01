@@ -1,0 +1,4 @@
+Nus
+data/nus/splits_multicam/samsung/fold1.txt
+data/nus/splits_multicam/samsung/fold2.txt
+data/nus/splits_multicam/samsung/fold3.txt

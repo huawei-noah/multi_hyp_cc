@@ -1,0 +1,4 @@
+Nus
+data/nus/splits_multicam/sony/fold1.txt
+data/nus/splits_multicam/sony/fold2.txt
+data/nus/splits_multicam/sony/fold3.txt

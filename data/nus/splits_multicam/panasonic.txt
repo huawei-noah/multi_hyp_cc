@@ -1,0 +1,4 @@
+Nus
+data/nus/splits_multicam/panasonic/fold1.txt
+data/nus/splits_multicam/panasonic/fold2.txt
+data/nus/splits_multicam/panasonic/fold3.txt

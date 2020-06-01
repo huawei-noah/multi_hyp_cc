@@ -1,0 +1,4 @@
+Nus
+data/nus/splits/samsung/fold1.txt
+data/nus/splits/samsung/fold2.txt
+data/nus/splits/samsung/fold3.txt

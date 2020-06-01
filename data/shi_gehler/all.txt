@@ -1,0 +1,4 @@
+ShiGehler
+data/shi_gehler/splits/fold1.txt
+data/shi_gehler/splits/fold2.txt
+data/shi_gehler/splits/fold3.txt

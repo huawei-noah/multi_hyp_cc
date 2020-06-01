@@ -1,0 +1,17 @@
+{
+  "base": "./",
+  "tmp": "/tmp/",
+  "shi_gehler_all": "/home/cv-awb/data/shi_gehler/images/",
+  "nus_canon_eos_1D_mark3": "/home/cv-awb/data/nus8/canon_eos_1D_mark3/",
+  "nus_canon_eos_600D": "/home/cv-awb/data/nus8/canon_eos_600D/",
+  "nus_fuji": "/home/cv-awb/data/nus8/fuji/",
+  "nus_nikonD40": "/home/cv-awb/data/nus8/nikonD40/",
+  "nus_nikonD5200": "/home/cv-awb/data/nus8/nikonD5200/",
+  "nus_olympus": "/home/cv-awb/data/nus8/olympus/",
+  "nus_panasonic": "/home/cv-awb/data/nus8/panasonic/",
+  "nus_samsung": "/home/cv-awb/data/nus8/samsung/",
+  "nus_sony": "/home/cv-awb/data/nus8/sony/",
+  "cube_original": "/home/cv-awb/data/cube/",
+  "cube_plus": "/home/cv-awb/data/cube/",
+  "cube_challenge": "/home/cv-awb/data/cube/"
+}

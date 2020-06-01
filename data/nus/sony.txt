@@ -1,0 +1,4 @@
+Nus
+data/nus/splits/sony/fold1.txt
+data/nus/splits/sony/fold2.txt
+data/nus/splits/sony/fold3.txt

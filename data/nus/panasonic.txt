@@ -1,0 +1,4 @@
+Nus
+data/nus/splits/panasonic/fold1.txt
+data/nus/splits/panasonic/fold2.txt
+data/nus/splits/panasonic/fold3.txt
