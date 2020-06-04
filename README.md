@@ -25,6 +25,7 @@ You need to set the dataset path in data/paths.json
 You can use the "Dockerfile" included to make sure all the needed packages are installed. Alternatively, we provide a requirements.txt to install required packages with pip (pip install -r requirements.txt).
 
 # Reproducing paper experiments
+(Table index matches arXiv paper version)
 
 In order to run the paper experiments, use "bash ./experiments/experiment1.sh":
 
