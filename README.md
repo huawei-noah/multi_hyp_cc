@@ -30,18 +30,18 @@ In order to run the paper experiments, use "bash ./experiments/experiment1.sh":
 
 | Table                             |   Script         |
 | --------------------------------- | ---------------- |
-| Table 2: Ours                     | experiment1.sh   |
-| Table 2: Ours (pretrained)        | experiment2.sh   |
-| Table 3: Ours                     | experiment3.sh   |
-| Table 3: Ours (pretrained)        | experiment4.sh   |
-| Table 4: OMPD: FFCC               | experiment5.sh   |
-| Table 4: MDT: FFCC                | experiment6.sh   |
-| Table 4: OMPD: Ours (pretrained)  | experiment7.sh   |
-| Table 4: MDT: Ours (pretrained)   | experiment8.sh   |
-| Table 5: Ours                     | experiment9.sh   |
-| Table 5: Ours (pretrained)        | experiment10.sh  |
-| Table 6: all rows                 | experiment11.sh  |
-| Table 7: Ours                     | experiment12.sh  |
+| Table 1: Ours                     | experiment1.sh   |
+| Table 1: Ours (pretrained)        | experiment2.sh   |
+| Table 2: Ours                     | experiment3.sh   |
+| Table 2: Ours (pretrained)        | experiment4.sh   |
+| Table 3: OMPD: FFCC               | experiment5.sh   |
+| Table 3: MDT: FFCC                | experiment6.sh   |
+| Table 3: OMPD: Ours (pretrained)  | experiment7.sh   |
+| Table 3: MDT: Ours (pretrained)   | experiment8.sh   |
+| Table 4: Ours                     | experiment9.sh   |
+| Table 4: Ours (pretrained)        | experiment10.sh  |
+| Table 7: all rows                 | experiment11.sh  |
+| Table 8: Ours                     | experiment12.sh  |
 | Table 8: all rows                 | experiment13.sh  |
 
 If you want to run other experiments, here's the way of using the cross-validation, hold-out and inference scripts:
