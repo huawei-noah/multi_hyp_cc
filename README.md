@@ -4,7 +4,7 @@
 
 **CVPR, 2020**
 
-[paper](https://arxiv.org/abs/2002.12896 "A Multi-Hypothesis Approach to Color Constancy paper") / [poster](https://github.com/smcdonagh/multi_hyp_cc/blob/master/06066-poster.pdf "A Multi-Hypothesis Approach to Color Constancy poster") / [code](https://github.com/huawei-noah/multi_hyp_cc "A Multi-Hypothesis Approach to Color Constancy code") / [supplement](https://arxiv.org/abs/2002.12896) / [video](https://youtu.be/3NjLnmFyXwI) / [blog post](https://blog.huawei.com/tag/noahs-ark-labs/)
+[paper](https://arxiv.org/abs/2002.12896 "A Multi-Hypothesis Approach to Color Constancy paper") / [poster](https://github.com/smcdonagh/multi_hyp_cc/blob/master/06066-poster.pdf "A Multi-Hypothesis Approach to Color Constancy poster") / [code](https://github.com/huawei-noah/multi_hyp_cc "A Multi-Hypothesis Approach to Color Constancy code") / [supplement](https://arxiv.org/abs/2002.12896) / [video](http://www.noahlab.com.hk/mockdata/news/new200615/06066-1min.mp4) / [blog post](http://www.noahlab.com.hk/#/news/5ee70c18a0c07a1a3855452d)
 
 ![candidate_selection](candidate_selection.png)
 
