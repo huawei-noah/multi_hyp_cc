@@ -1,7 +1,7 @@
 opencv-python
 sklearn
 torchvision==0.5.0
-tensorflow==1.15.2
+tensorboardX
 matplotlib
 seaborn
 tqdm

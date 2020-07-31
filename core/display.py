@@ -166,8 +166,6 @@ class Display():
         ax.set_xlabel('r/g')
         ax.set_ylabel('b/g')
 
-        plt.show()
-
         cax, _ = mpl.colorbar.make_axes(ax)
         cmap = mpl.cm.get_cmap('jet')
         normalize = mpl.colors.Normalize(vmin=prob.min(), vmax=prob.max())

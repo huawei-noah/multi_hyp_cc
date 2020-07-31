@@ -105,6 +105,16 @@ class Nus(Dataset):
         self._saturation_level = int(gt['saturation_level'][0][0])
         self._class_dataset = CAMERA_CLASS_NUS[subdataset]
 
+        image_names = gt['all_image_names'].tolist()
+        image_names = [e[0][0] for e in image_names]
+        groundtruth_illuminants = gt['groundtruth_illuminants']
+        CC_coords = gt['CC_coords']
+
+        for i in range(len(self._rgbs)):
+            basename_rgb = os.path.basename(self._rgbs[i].replace('.PNG', ''))
+            index = image_names.index(basename_rgb)
+            self._illuminants.append(groundtruth_illuminants[index, :])
+
         self._cache = cache
 
     def get_filename(self, index):
@@ -124,16 +134,6 @@ class Nus(Dataset):
                 filename = line.strip()
                 rgb_path = os.path.join(self._base_path, 'PNG', filename)
                 self._rgbs.append(rgb_path)
-
-                txt = filename.replace('.PNG','')[-4:]
-                label_path = os.path.join(self._base_path, 'labels', txt + '.txt')
-                illuminant = None
-                with open(label_path, 'r') as file_txt:
-                    illuminant = file_txt.readlines()[0].split(' ')
-                illuminant = [float(e) for e in illuminant]
-                length = math.sqrt(sum([e*e for e in illuminant]))
-                illuminant = [e / length for e in illuminant]
-                self._illuminants.append(illuminant)
 
                 txt = filename.replace('.PNG','_mask.txt')
                 mask_path = os.path.join(self._base_path, 'mask', txt)
