@@ -6,19 +6,19 @@
 
 [paper](https://arxiv.org/abs/2002.12896 "A Multi-Hypothesis Approach to Color Constancy paper") / [poster](https://github.com/smcdonagh/multi_hyp_cc/blob/master/06066-poster.pdf "A Multi-Hypothesis Approach to Color Constancy poster") / [code](https://github.com/huawei-noah/multi_hyp_cc "A Multi-Hypothesis Approach to Color Constancy code") / [supplement](https://arxiv.org/abs/2002.12896) / [video](http://www.noahlab.com.hk/mockdata/news/new200615/06066-1min.mp4) / [blog post](http://www.noahlab.com.hk/#/news/5ee70c18a0c07a1a3855452d)
 
-![candidate_selection](candidate_selection.png)
+![candidate_selection](README_img/candidate_selection.png)
 
 *Contemporary approaches frame the color constancy problem as learning camera specific illuminant mappings. While high accuracy can be achieved on camera specific data, these models depend on camera spectral sensitivity and typically exhibit poor generalisation to new devices. Additionally, regression methods produce point estimates that do not explicitly account for potential ambiguities among plausible illuminant solutions, due to the ill-posed nature of the problem. We propose a Bayesian framework that naturally handles color constancy ambiguity via a multi-hypothesis strategy. Firstly, we select a set of candidate scene illuminants in a data-driven fashion and apply them to a target image to generate a set of corrected images. Secondly, we estimate, for each corrected image, the likelihood of the light source being achromatic using a camera-agnostic CNN. Finally, our method explicitly learns a final illumination estimate from the generated posterior probability distribution. Our likelihood estimator learns to answer a camera-agnostic question and thus enables effective multi-camera training by disentangling illuminant estimation from the supervised learning task. We extensively evaluate our proposed approach and additionally set a benchmark for novel sensor generalisation without re-training. Our method provides state-of-the-art accuracy on multiple public datasets up to 11% median angular error improvement while maintaining real-time execution.*
 
-[![A Multi-Hypothesis Approach to Color Constancy Video](06066-youtube.png)](https://youtu.be/3NjLnmFyXwI)
+[![A Multi-Hypothesis Approach to Color Constancy Video](README_img/06066-youtube.png)](https://youtu.be/3NjLnmFyXwI)
 
 # Required hardware
 
 We tested this on a Nvidia Tesla V100 with 32 GB of memory. You can reduce the batch size in the json of every experiment, but results could be different.
 
-# Set dataset paths
+# Dataset preprocessing
 
-You need to set the dataset path in data/paths.json
+To make reproducing our work easier, we have created some scripts in the folder "cc_data". Please, check the script in each folder for instructions on what to download and run the script to preprocess the dataset.
 
 # Install required packages
 
