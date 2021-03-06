@@ -1,5 +1,5 @@
 {
-  "name": "kmeans_finalaffine_notrain_k25",
+  "name": "kmeans_finalaffine_notrain_k120",
   "network": {
     "arch": "VggClassification",
     "subarch": "vgg11",
@@ -8,10 +8,10 @@
   },
   "candidate_selection": {
     "name": "KMeans",
-    "params": {"k": 25}
+    "params": {"k": 120}
   },
   "cameras": ["CanonEOS550D"],
-  "pretrained_skip": ["clusters_CanonEos1DMark3", "clusters_CanonEos600D", "clusters_FujifilmXM1", "clusters_NikonD5200", "clusters_OlympusEPL6", "clusters_PanasonicGX1", "clusters_SamsungNX2000", "clusters_SonyA57", "fc_conf.0.weight", "fc_conf.0.bias", "fc_conf.2.weight", "fc_conf.2.bias", "fc_conf.4.weight"],
+  "pretrained_skip": ["clusters_CanonEos1DMark3", "clusters_CanonEos600D", "clusters_FujifilmXM1", "clusters_NikonD5200", "clusters_OlympusEPL6", "clusters_PanasonicGX1", "clusters_SamsungNX2000", "clusters_SonyA57"],
   "loss": {
     "name": "AngularError",
     "params": {
