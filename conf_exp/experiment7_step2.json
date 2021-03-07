@@ -10,7 +10,7 @@
     "name": "KMeans",
     "params": {"k": 120}
   },
-  "pretrained_skip": ["clusters_ShiGehler", "CanonEOS550D"],
+  "pretrained_skip": ["clusters_ShiGehler", "clusters_CanonEOS550D"],
   "cameras": ["CanonEos1DMark3", "CanonEos600D", "FujifilmXM1", "NikonD5200", "OlympusEPL6", "PanasonicGX1", "SamsungNX2000", "SonyA57"],
   "sampler": "CameraSampler",
   "loss": {

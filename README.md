@@ -42,7 +42,7 @@ In order to run the paper experiments, use "bash ./experiments/experiment1.sh":
 | Table 4: Ours                     | experiment9.sh   |
 | Table 4: Ours (pretrained)        | experiment10.sh  |
 | Table 7: all rows                 | experiment11.sh  |
-| Table 8: Ours                     | experiment12.sh  |
+| Table 5: Ours                     | experiment12.sh  |
 | Table 8: all rows                 | experiment13.sh  |
 
 If you want to run other experiments, here's the way of using the cross-validation, hold-out and inference scripts:
