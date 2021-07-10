@@ -104,7 +104,7 @@ class VggClassification(VGG):
                     param.requires_grad = False
 
         # probability of dropout
-        self.dropout = nn.Dropout()
+        self.dropout = nn.Dropout(dropout)
 
         # final FC layers: from N to 1 (probability for illuminant)
         final_n = 1
